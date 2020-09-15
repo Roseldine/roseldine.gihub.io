@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+// color array variables
+$colors: (
+    _menu: #222831,
+    _content: #393e46,
+    _title: #ffffff,
+    _text: #eeeeee,
+    _accent: #ff5722,
+);
+
+// color function
+@function color($colorName) {
+    @return map-get($colors, $colorName);
+}
+
+// ======================================== Common
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: color(_accent);
+}
+
+:root {
+    --sectionSideMargin: 0;
+    --sectionVerticalMargin: 1em;
+    --specialSideMargin: 10em;
+    --verticalMargin: 70px;
+}
+
+.hideMe {
+    visibility: hidden;
+}
+
+
+//================================================))  Main
+
+#wrapper {
+    font-size: 1.25rem;
+    background: color(_text);
+    color: color(_menu);
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#intro {
+    margin: var(--verticalMargin) 5em
+}
+
+.greeting {
+    padding: var(--sectionVerticalMargin) var(--sectionSideMargin);
+}
+
+.title {
+    text-shadow: 0px 6px 15px rgba(150, 150, 150, 0.5);
+}
+
+.greeting>p {
+    padding-top: 1em;
+}
+
+//--------------------------------------------- Skills
+#skills {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    
+    font-size: 1.15rem;
+}
+
+.skill {
+    flex: 1;
+}
+
+.skill>ul {
+    padding-top: .5em;
+    font-weight: 300;
+}
+
+//--------------------------------------------- Contact
+#contact {
+    padding-top: 3em;
+    display: flex;
+}
+
+#contact>ul>li {
+    margin-bottom: 1em;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: color(_accent);
+}
+
+.picSmall {
+    width: 5em;
+    clip-path: circle(2em at center);
+    box-shadow: 0px 6px 25px 0px rgba(53, 62, 71, 0.6);
+}
+
+.circle { 
+    width:90px;
+    background-color: #eed;
+    box-shadow: 0px 0px 15px 0px rgba(53, 62, 71, 0.6);
+    border-radius:100px;
+ } 
+
+
+//--------------------------------------------- Projects
+#projects {
+    margin: var(--verticalMargin) 5em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.project {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.halfImage {
+    min-width: 128px;
+    max-width: 512px;
+    box-shadow: 0px 6px 25px 0px rgba(53, 62, 71, 0.6);
+}
+
+.projImg {
+    width: 100%;
+    min-height: 100%;
+}
+
+.halfDescription {
+    padding: 1em;
+}
+
+.description>p {
+    padding-top: .5em;
+}
+
+.reponsabilities {
+    padding-top: 1em;
+    font-size: 1rem;
+}
+
+.reponsabilities>ul {
+    padding-top: .5em;
+}
+
+//================================================))  Media Queries
+@media only screen and (max-width: 1024px)
+{
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro {
+        margin: 10px 3em;
+    }
+    
+    .greeting {
+        padding: var(--sectionVerticalMargin) var(--sectionSideMargin);
+    }
+
+    #projects {
+        margin: 10px 2em;
+    
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        margin: 10px 2em;
+    
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects {
+        margin: 10px 2em;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inline {
+        font-size: 1rem;
+    }
+}

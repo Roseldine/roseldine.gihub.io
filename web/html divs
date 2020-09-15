@@ -1,0 +1,90 @@
+
+====================== -- Home :
+------------- Home Menu
+<div id="announment">
+    <h1 id="title">
+        Hello, I'm <br> Tiago Barracha
+    </h1>
+    <p id="message">
+        A Jr Game Developer currently leveling up on solo projects while looking for an internship
+    </p>
+</div>
+
+
+------------- Home Content
+<iframe id="game" src="https://i.simmer.io/@Roseldine/test-game" style="width:100%;min-height:100%"></iframe>
+
+<li><a id="anchorHome" href="index.html">Home</a></li>
+
+====================== -- About :
+------------- About Menu
+<div id="menuPic">
+    <img src="/web/Images/Fotos/pic_1.jpg" alt="Photo of me">
+</div>
+
+
+------------- About Content
+
+<div id="about">
+    <div id="description">
+        <h1>Passion for code, <br> Eye for design</h1>
+        <p>I don't focus solely on Game Dev, I also do Web Development, Graphic Design and engange in 3D Digital Arts and its processes, such as 3d modeling, texturing and 3d animation, focusing on making everything as organic as possible.</p>
+    </div>
+    <div id="skills">
+        <div id="skillSet">
+            <div class="skill">
+                <h3>Game Dev</h3>
+                <ul>
+                    <li>Unity 3D</li>
+                    <li>Godot</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Web Dev</h3>
+                <ul>
+                    <li>html</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Dart</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Art & Design</h3>
+                <ul>
+                    <li>Blender</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Substance Painter</li>
+                    <li>Substance Designer</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <ul>
+            <li><a href="https://www.facebook.com/tiago.barracha.5" target="_blank">Facebook</a></li>
+            <li>|</li>
+            <li><a href="https://www.linkedin.com/in/tiago-barracha-a4203614a/" target="_blank">Linked In</a></li>
+            <li>|</li>
+            <li> <a href="mailto: ti.barracha@gmail.com"> ti.barracha@gmail.com</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+// ============================================= UNITY EMBEBED
+
+<object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+        width="420" height="750"
+        codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+ <param name="unity3d" value="WebPlayer.unity3d" />
+ <embed id="UnityEmbed" src="mlpbeta/mlpbeta.unity3d" width="420" height="750"
+  type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+ </object>
+
+
+ <div class="game_thumb" style="background-color:#000000;background-image: url('https://img.itch.zone/aW1hZ2UvMzAyNDExLzE0ODAyOTEucG5n/315x250%23c/dfFEal.png')"></div>
